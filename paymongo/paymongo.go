@@ -9,6 +9,8 @@ type PaymongoInstance struct {
 	secret string
 }
 
+// Creates new Paymongo Instance
+// secret_key is from the user's dashboard
 func NewProvider(secret_key string) (*PaymongoInstance, error) {
 	if secret_key != "" {
 		return &PaymongoInstance{
